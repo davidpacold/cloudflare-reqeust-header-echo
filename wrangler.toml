@@ -6,8 +6,9 @@ compatibility_flags = ["nodejs_compat"]
 
 # Worker Routes
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#routes
+workers_dev = true
 routes = [
-  { pattern = "cf-request.davidpacold.com/*", zone_name = "davidpacold.com" }
+  { pattern = "cf-request.davidpacold.com", zone_name = "davidpacold.com" }
 ]
 
 # Workers Logs
