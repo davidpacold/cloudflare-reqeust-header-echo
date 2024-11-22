@@ -1,5 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "cloudfare-reqeust-header-echo"
+name = "cloudflare-reqeust-header-echo"
 main = "src/index.js"
 compatibility_date = "2024-11-12"
 compatibility_flags = ["nodejs_compat"]
