@@ -4,6 +4,12 @@ main = "src/index.js"
 compatibility_date = "2024-11-12"
 compatibility_flags = ["nodejs_compat"]
 
+# Worker Routes
+# Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#routes
+routes = [
+  { pattern = "cf-request.davidpacold.com/*", zone_name = "davidpacold.com" }
+]
+
 # Workers Logs
 # Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
 # Configuration: https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs
