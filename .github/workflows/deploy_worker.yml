@@ -2,7 +2,9 @@ name: Deploy Worker
 on:
   push:
     branches:
-      - main
+      - main # Automatically triggers on pushes to the main branch
+  workflow_dispatch: # Allows the workflow to be triggered manually
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -13,4 +15,4 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
