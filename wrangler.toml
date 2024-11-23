@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 
 # Worker custom domain
 # Docs: https://developers.cloudflare.com/workers/configuration/routing/custom-domains/#set-up-a-custom-domain-in-your-wranglertoml
-workers_dev = true
+workers_dev = false
 routes = [
   { pattern = "cf-request.davidpacold.dev", custom_domain = true }
 ]
