@@ -8,7 +8,7 @@ compatibility_flags = ["nodejs_compat"]
 # Docs: https://developers.cloudflare.com/workers/configuration/routing/custom-domains/#set-up-a-custom-domain-in-your-wranglertoml
 workers_dev = true
 routes = [
-  { pattern = "cf-request.davidpacold.com", custom_domain = true }
+  { pattern = "cf-request.davidpacold.dev", custom_domain = true }
 ]
 
 # Workers Logs
